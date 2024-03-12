@@ -3,10 +3,9 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: black;
-  background-image: url("./assets/images/yugi.webp");
+  background-image: url("./assets/images/background.webp");
   background-repeat: no-repeat;
-  background-size: 15vw;
   background-attachment: fixed;
-  background-position: bottom left;
+  background-size: cover;
   font-family: "Blinker", sans-serif;
 }

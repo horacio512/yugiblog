@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AppBar, Box, Button, Drawer, Grid, ThemeProvider, Typography } from '@mui/material'
+import { AppBar, Box, Button, Drawer, ThemeProvider, Typography } from '@mui/material'
 import Tema from '../assets/Tema'
 import MenuIcon from '@mui/icons-material/Menu';
 import yugitcg from "../assets/images/yugitcg.svg"
@@ -13,7 +13,7 @@ const NavBar = () => {
 
     return (
         <ThemeProvider theme={Tema}>
-            <AppBar sx={{ background: "transparent" }} position='fixed'>
+            <AppBar sx={{ background: "transparent" }} position='sticky'>
                 <Box display="flex" justifyContent="center" mt={{ xs: 1, sm: 3 }}>
 
                     <Box component="img" mr={1} sx={{
