@@ -4,7 +4,9 @@ const Tema = createTheme({
 
     palette: {
         primary: {
-            main: "#ffffff"
+            light: "#F5F5F5",
+            main: "#ffffff",
+            
         },
         secondary: {
             main: "#B60014 "
@@ -12,7 +14,7 @@ const Tema = createTheme({
     },
     typography: {
         h1: {
-            fontSize: "calc(2em + 2vw)",
+            fontSize: "calc(1.5em + 1.4vw)",
         },
         h2: {
             fontSize: "calc(1.3em + 1.3vw)",

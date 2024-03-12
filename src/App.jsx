@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
+import Tournament from './pages/Tournament'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <NavBar />
       <Home />
+      <Tournament />
     </>
   )
 }

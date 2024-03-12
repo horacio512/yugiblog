@@ -13,8 +13,8 @@ const NavBar = () => {
 
     return (
         <ThemeProvider theme={Tema}>
-            <AppBar sx={{ background: "transparent" }} position='sticky'>
-                <Box display="flex" justifyContent="center" mt={{ xs: 1, sm: 3 }}>
+            <AppBar sx={{ background: {xs:"black"},paddingBottom: 1 }} position='sticky'>
+                <Box display="flex" justifyContent="center" mt={{ xs: 1, sm: 2 }}>
 
                     <Box component="img" mr={1} sx={{
                         height: 127,
@@ -25,13 +25,13 @@ const NavBar = () => {
 
                     <Box justifyContent="center" sx={{ display: { xs: "none", sm: "flex" } }} >
                         {titles.map((names, index) => (
-                            <Button key={index} variant="outlined" color="secondary" sx={{
+                            <Button key={index} variant="text" color="secondary" sx={{
                                 ':hover': {
                                     bgcolor: 'secondary.main',
                                     color: 'white',
                                 },
                             }}>
-                                <Typography color="primary" variant='h3' p={1}>{names.name}</Typography>
+                                <Typography color="primary" variant='h3' fontWeight={600} p={1}>{names.name}</Typography>
                             </Button>
                         ))}
                     </Box>
@@ -46,7 +46,7 @@ const NavBar = () => {
                         >
                             {titles.map((names, index) => (
                                 <Button key={index} variant="text" sx={{border: 1}}>
-                                    <Typography color="primary"  variant='h2' p={1}>{names.name}</Typography>
+                                    <Typography color="primary" variant='h2' fontWeight={600} p={1}>{names.name}</Typography>
                                 </Button>
                             ))}
 
