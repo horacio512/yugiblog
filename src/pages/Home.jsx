@@ -6,7 +6,7 @@ import regional from "../assets/images/regional.webp"
 const Home = () => {
     return (
         <ThemeProvider theme={Tema}>
-            <Grid container display="flex" justifyContent="center" alignItems="space-between" mt={4} mb={8}>
+            <Grid container display="flex" justifyContent="center" alignItems="space-between" height="100vh" mt={4} mb={8}>
 
                 <Grid item xs={11} sm={10} mb={3}>
                     <Typography variant="h1" fontWeight={600} textAlign="center" color="primary">Bienvenido Duelista!</Typography>
