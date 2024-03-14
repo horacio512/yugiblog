@@ -1,21 +1,19 @@
 import { Grid, Typography, ThemeProvider, Button, Box } from '@mui/material'
 import React from 'react'
 import Tema from '../assets/Tema'
-import kingdom from "../assets/images/kingdom.webp"
-import lorien from "../assets/images/lorien.webp"
-import piedras from "../assets/images/piedras.webp"
-import gear from "../assets/images/geartown.webp"
-import all from "../assets/images/banner.webp"
-import all2 from "../assets/images/banner2.webp"
-import all3 from "../assets/images/banner3.webp"
-import all4 from "../assets/images/banner4.webp"
-
-
+import all from "../assets/images/torneo/banner.webp"
+import all2 from "../assets/images/torneo/banner2.webp"
+import all3 from "../assets/images/torneo/banner3.webp"
+import all4 from "../assets/images/torneo/banner4.webp"
+import yugi from "../assets/images/torneo/yugi.webp"
+import kaiba from "../assets/images/torneo/kaiba.webp"
+import pegasus from "../assets/images/torneo/pegasus.webp"
+import joey from "../assets/images/torneo/joey.webp"
 
 const Tournament = () => {
 
-    const torneos = [{ name: "Kingdom Championship Series", img: kingdom, back: all2 }, { name: "Liga Fenix las Piedras", img: piedras, back: all },
-    { name: "CDS Lorien TCG Club", img: lorien, back: all3 }, { name: "Liga Maldonado Geartown", img: gear, back: all4 },]
+    const torneos = [{ name: "Kingdom Championship Series", info: "25 de mayo 626", back: all2, front: yugi }, { name: "Liga Fenix las Piedras", info: "Las piedras", back: all,front: kaiba },
+    { name: "CDS Lorien TCG Club", info: "Colonia 2235", back: all3,front: pegasus }, { name: "Liga Maldonado Geartown", info: "Gral. Leonardo Olivera 1132 (Maldonado)", back: all4 ,front: joey},]
 
 
     return (
@@ -34,19 +32,22 @@ const Tournament = () => {
                 <Grid item xs={12} sm={10}>
                     {torneos.map((info, index) => (
 
-                        <Box display="flex" alignItems="center" justifyContent="space-between" key={index} mt={1} sx={{ backgroundImage: `url(${info.back})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "right" }} height="20vh">
+                        <Box display="flex" alignItems="center"  key={index} mt={1.1}
+                            sx={{
+                                backgroundImage: `url(${info.back})`, backgroundSize: "cover", backgroundRepeat: "no-repeat",
+                                backgroundPosition: "right", cursor: "pointer", "&:hover": { transform: "scale(1.1)" }
+                            }} height="20vh">
 
-                            <Box sx={{ backdropFilter: "blur(5px)", clipPath: "polygon(0% 0, 100% 0, 70% 100%, 0% 100%)", width: "60%", height: "100%" }}>
-                                <Grid item xs={12} sm={12}>
+                            <Box sx={{ backdropFilter: "blur(6px)", clipPath: "polygon(0% 0, 100% 0, 70% 100%, 0% 100%)", width: "60%", height: "100%" }}>
+                                <Grid item xs={12} sm={12} >
                                     <Typography variant="h3" textAlign="center" textTransform="capitalize" fontWeight={600} color="primary">{info.name}</Typography>
+                                    <Typography variant="h5" textAlign="center" color="primary">{info.info}</Typography>
                                 </Grid>
                             </Box>
-                            
-                            <Grid item xs={3} sm={1} textAlign="center">
-                                    <img src={info.img} style={{ border: 1, borderStyle: "hidden", borderRadius: "10%" }} width="60%" height="auto" />
-                                </Grid>
 
-
+                            <Box alignSelf="flex-end" display="flex">
+                                <img src={info.front} height="125vh" />
+                            </Box>
                         </Box>
                     ))}
 
