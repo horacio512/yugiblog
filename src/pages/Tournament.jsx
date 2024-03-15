@@ -21,8 +21,8 @@ const Tournament = () => {
 
             <Grid container justifyContent="center" mt={4} id="#torneos">
 
-                <Grid item xs={11} sm={10} textAlign="center" mb={1} >
-                    <Typography variant='h2' fontWeight={600} color="primary">Liga de Torenos</Typography>
+                <Grid item xs={11} sm={10} textAlign="center" mb={3} >
+                    <Typography variant='h1' fontWeight={600} color="primary">Liga de Torenos</Typography>
                 </Grid>
 
                 <Grid item xs={11} sm={10}>

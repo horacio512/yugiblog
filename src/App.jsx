@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar'
+import Footer from './pages/Footer'
 import Home from './pages/Home'
 import Tournament from './pages/Tournament'
 
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <Home />
       <Tournament />
+      <Footer/>
     </>
   )
 }
