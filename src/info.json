@@ -1,0 +1,29 @@
+{
+    "kingdom": {
+        "id:": 1,
+        "store": "Kingdom TCG Store",
+        "dir": "25 de mayo 626",
+        "face": "https://www.facebook.com/groups/KingdomTCG",
+        "insta": "https://www.instagram.com/kingdomtcgs/"
+    },
+    "laspiedras": {
+        "id:": 2,
+        "store": "Las Piedras",
+        "dir": "Jose Artigas y Lavalleja 90200 Las Piedras",
+        "insta": "https://www.instagram.com/ligafenixlaspiedras/"
+    },
+    "lorien": {
+        "id:": 3,
+        "store": "Lorien TCG Club",
+        "dir": "Colonia 2235",
+        "face": "https://www.facebook.com/LorientTCG",
+        "insta": "https://www.instagram.com/lorien_tcg_club/"
+    },
+    "geartown": {
+        "id:": 4,
+        "store": "Geartown",
+        "dir": "Gral. Leonardo Olivera 1132",
+        "face": "https://www.facebook.com/groups/396380937141761",
+        "insta": "https://www.instagram.com/geartowntcgclub/"
+    }
+}
