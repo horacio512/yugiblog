@@ -10,7 +10,6 @@ const Home = () => {
 
                 <Grid item xs={11} sm={10} mb={3}>
                     <Typography variant="h1" fontWeight={600} textAlign="center" color="primary">Bienvenido Duelista!</Typography>
-                    <Typography variant="h2" fontWeight={600} textAlign="center" color="primary">Proximamente</Typography>
                 </Grid>
 
                 <Grid item xs={11} sm={5}>

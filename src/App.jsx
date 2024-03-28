@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Footer from './pages/Footer'
 import Home from './pages/Home'
 import Tournament from './pages/Tournament'
+import Contact from "./pages/Contact";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <Home />
       <Tournament />
+      <Contact/>
       <Footer />
     </Router>
   )
