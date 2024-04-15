@@ -8,13 +8,18 @@ import stores from "../info.json"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-const Detail = ({ storeName, openNew }) => {
+const Detail = ({ storeName, changeState }) => {
 
     const [open, setOpen] = useState(false)
 
     useEffect(() => {
         setOpen(true)
     }, [])
+
+    const onClose = () => {
+        changeState("")
+        setOpen(false)
+    }
 
     return (
         <ThemeProvider theme={Tema}>
@@ -23,7 +28,7 @@ const Detail = ({ storeName, openNew }) => {
             <Drawer PaperProps={{ sx: { height: '100vh', top: "11%", right: "0%", width: "100%", backgroundColor: "#272525" } }}
                 anchor="right"
                 open={open}
-                onClose={() => { setOpen(false) }}
+                onClose={() => { onClose() }}
             >
 
                 <Grid container display="flex" justifyContent="center">

@@ -1,4 +1,4 @@
-import { Grid, Typography, ThemeProvider, Button, Box } from '@mui/material'
+import { Grid, Typography, ThemeProvider, Box } from '@mui/material'
 import React, { useState } from 'react'
 import Tema from '../assets/Tema'
 import TouchAppIcon from '@mui/icons-material/TouchApp';
@@ -19,6 +19,10 @@ const Tournament = () => {
 
     const [show, setShow] = useState("")
 
+    const changeState = (info) => {
+        setShow(info)
+    }
+
     return (
         <ThemeProvider theme={Tema}>
 
@@ -36,7 +40,7 @@ const Tournament = () => {
                     {torneos.map((info, index) => (
 
                         <Box key={index}>
-                            <Box display="flex" alignItems="center" mt={1.1} onClick={() => { show === info.id ? (setShow("")) : (setShow(info.id)) }}
+                            <Box display="flex" alignItems="center" mt={1.1} onClick={() => { changeState(info.id) }}
                                 sx={{
                                     backgroundImage: `url(${info.back})`, backgroundSize: "cover", backgroundRepeat: "no-repeat",
                                     backgroundPosition: "right", cursor: "pointer", "&:hover": { sm: { transform: "scale(1.1)" } }
@@ -60,7 +64,7 @@ const Tournament = () => {
                                 </Box>
 
                             </Box>
-                            {show === info.id ? (<Detail storeName={info.id} />) : (<></>)}
+                            {show === info.id ? (<Detail storeName={show} changeState={changeState} />) : (<></ >)}
                         </Box>
 
                     ))}
