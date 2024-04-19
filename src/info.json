@@ -34,5 +34,57 @@
         "link": "https://maps.app.goo.gl/JwYZohNBpur43ujC7",
         "face": "https://www.facebook.com/groups/396380937141761",
         "insta": "https://www.instagram.com/geartowntcgclub/"
+    },
+    "top": {
+        "names": [
+            {
+                "name": "Julian Alvarez",
+                "deck": "Runick Orcust Bystial",
+                "list": "https://ygoprodeck.com/deck/bystial-runick-orcust-468271",
+                "insta": "https://www.instagram.com/the_countess____/"
+            },
+            {
+                "name": "Luca Garcia",
+                "deck": "Dragon Link",
+                "list": "https://ygoprodeck.com/deck/horus-resonator-bystial-dragon-link-468270",
+                "insta": "https://www.instagram.com/gluca002/"
+            },
+            {
+                "name": "Steven Gonzales",
+                "deck": "Melffy Spright",
+                "list": "https://ygoprodeck.com/deck/bystial-runick-orcust-468271",
+                "insta": "https://www.instagram.com/stevenkclan/"
+            },
+            {
+                "name": "Gabriel Valiente",
+                "deck": "Branded Despia",
+                "list": "https://ygoprodeck.com/deck/branded-despia-467995",
+                "insta": "https://www.instagram.com/torito_sw/"
+            },
+            {
+                "name": "Jean Carreras",
+                "deck": "Horus PK Ra",
+                "list": "https://ygoprodeck.com/deck/adventurer-horus-phantom-knights-ra-466008",
+                "insta": "https://www.instagram.com/jeancarreras_0.0/"
+            },
+            {
+                "name": "Ulises D'Atri",
+                "deck": "Branded Despia",
+                "list": "https://ygoprodeck.com/deck/branded-despia-467994",
+                "insta": "https://www.instagram.com/4letheiaa/"
+            },
+            {
+                "name": "Juan Chiappara",
+                "deck": "Kashtira",
+                "list": "https://ygoprodeck.com/deck/kashtira-467991",
+                "insta": "https://www.instagram.com/jpchiappara/"
+            },
+            {
+                "name": "Jorge Rodriguez",
+                "deck": "Snake-Eye Rescue-ACE",
+                "list": "https://ygoprodeck.com/deck/diabellstar-snake-eye-rescue-ace-467984",
+                "insta": "https://www.instagram.com/jorgechelsea901/"
+            }
+        ]
     }
 }

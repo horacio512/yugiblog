@@ -13,12 +13,10 @@ const NavBar = () => {
 
     return (
         <ThemeProvider theme={Tema}>
-            <AppBar sx={{ background: {xs:"black"},paddingBottom: 1 }} position='sticky'>
+            <AppBar sx={{ background: { xs: "black" }, paddingBottom: 1 }} position='sticky'>
                 <Box display="flex" justifyContent="center" mt={{ xs: 1, sm: 2 }}>
 
-                    <Box component="img" mr={1} sx={{
-                        height: 127,
-                        width: "auto",
+                    <Box component="img" mr={1} alt="yugioh logo" loading="eager" title="yugioh logo" sx={{
                         maxHeight: { xs: 60 },
                         maxWidth: { xs: 187 },
                     }} src={yugitcg} />
@@ -39,13 +37,13 @@ const NavBar = () => {
                     <Box justifyContent="end" sx={{ display: { xs: "flex", sm: "none" } }}>
                         <Button onClick={() => { setOpen(true) }}><MenuIcon fontSize='large' /></Button>
                         <Drawer
-                            PaperProps={{ sx: { height: '60vh', top: "11%", right: "1%", width: "98%", backgroundColor: "#272525" }}}
+                            PaperProps={{ sx: { height: '60vh', top: "11%", right: "1%", width: "98%", backgroundColor: "#272525" } }}
                             anchor="right"
                             open={open}
                             onClose={() => { setOpen(false) }}
                         >
                             {titles.map((names, index) => (
-                                <Button key={index} variant="text" sx={{border: 1}}>
+                                <Button key={index} variant="text" sx={{ border: 1 }}>
                                     <Typography color="primary" variant='h2' fontWeight={600} p={1}>{names.name}</Typography>
                                 </Button>
                             ))}

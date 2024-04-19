@@ -60,7 +60,7 @@ const Tournament = () => {
 
                                 </Box>
                                 <Box alignSelf="flex-end" display="flex">
-                                    <img src={info.front} height="125vh" />
+                                    <img src={info.front} loading="lazy" alt="yugioh character" title={info.name} height="125vh" width="auto" />
                                 </Box>
 
                             </Box>
