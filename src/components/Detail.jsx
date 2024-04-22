@@ -37,7 +37,7 @@ const Detail = ({ storeName, changeState }) => {
                         <Typography variant="h1" fontWeight={400} color="primary">{stores[storeName].store} </Typography>
                     </Grid>
 
-                    <Grid item xs={10} sm={6} mt={2}>
+                    <Grid item xs={10} sm={6} mt={2} textAlign="center">
                         <Button href={stores[storeName].maps} target="_blank">
                             <img src={stores[storeName].ubi} width="100%" height="auto" loading="lazy" />
                         </Button>
