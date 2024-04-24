@@ -33,8 +33,12 @@ const Detail = ({ storeName, changeState }) => {
 
                 <Grid container display="flex" justifyContent="center">
 
-                    <Grid item xs={11} sm={10} mt={3} textAlign="center">
-                        <Typography variant="h1" fontWeight={400} color="primary">{stores[storeName].store} </Typography>
+                    <Grid item xs={11} sm={10} mt={3}>
+                        <Typography variant="h1" fontWeight={600} color="secondary">{stores[storeName].store} </Typography>
+                    </Grid>
+                    
+                    <Grid item xs={11} sm={10} mt={2}>
+                        <Typography variant="h2" color="primary" >Último ganador de la Liga</Typography>
                     </Grid>
 
                     <Grid item xs={10} sm={6} mt={2} textAlign="center">
@@ -52,6 +56,8 @@ const Detail = ({ storeName, changeState }) => {
                         </Typography>
 
                     </Grid>
+
+
                 </Grid>
             </Drawer>
 

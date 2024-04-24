@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AppBar, Box, Button, Drawer, ThemeProvider, Typography } from '@mui/material'
+import { HashLink } from "react-router-hash-link"
 import Tema from '../assets/Tema'
 import MenuIcon from '@mui/icons-material/Menu';
 import yugitcg from "../assets/images/yugitcg.svg"
@@ -29,7 +30,11 @@ const NavBar = () => {
                                     color: 'white',
                                 },
                             }}>
-                                <Typography color="primary" variant='h3' fontWeight={600} p={1}>{names.name}</Typography>
+
+                                <HashLink smooth to={`#${names.name.toLocaleLowerCase()}`} >
+                                    <Typography color="primary" variant='h3' fontWeight={600} p={1}>{names.name}</Typography>
+                                </HashLink>
+
                             </Button>
                         ))}
                     </Box>
@@ -44,7 +49,9 @@ const NavBar = () => {
                         >
                             {titles.map((names, index) => (
                                 <Button key={index} variant="text" sx={{ border: 1 }}>
-                                    <Typography color="primary" variant='h2' fontWeight={600} p={1}>{names.name}</Typography>
+                                    <HashLink smooth to={`#${names.name.toLocaleLowerCase()}`} >
+                                        <Typography color="primary" variant='h3' fontWeight={600} p={1}>{names.name}</Typography>
+                                    </HashLink>
                                 </Button>
                             ))}
 

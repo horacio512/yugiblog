@@ -9,7 +9,7 @@ const Home = () => {
 
     return (
         <ThemeProvider theme={Tema}>
-            <Grid container display="flex" justifyContent="center" alignItems="space-between" mt={2} mb={15}>
+            <Grid container display="flex" justifyContent="center" id="inicio" alignItems="space-between" mt={2} mb={15}>
 
                 <Grid item xs={12} mb={3}>
                     <Typography textAlign="center" variant="h1" color="#FFD700" fontWeight={600} mb={1}>WCQ Regional Montevideo</Typography>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import NavBar from './components/NavBar'
 import Footer from './pages/Footer'
 import Home from './pages/Home'
@@ -15,6 +15,7 @@ function App() {
       <Tournament />
       <Contact/>
       <Footer />
+      
     </Router>
   )
 }

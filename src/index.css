@@ -8,4 +8,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Blinker", sans-serif;
+  overflow-y: "scroll";
+
+}
+
+* {
+  text-decoration: none;
 }

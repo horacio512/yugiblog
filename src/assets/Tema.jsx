@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material"
+import { colors, createTheme } from "@mui/material"
 
 const Tema = createTheme({
 
@@ -6,12 +6,13 @@ const Tema = createTheme({
         primary: {
             light: "#F5F5F5",
             main: "#ffffff",
-            
+
         },
         secondary: {
             main: "#B60014 "
         }
     },
+
     typography: {
         h1: {
             fontSize: "calc(1.5em + 1.4vw)",
